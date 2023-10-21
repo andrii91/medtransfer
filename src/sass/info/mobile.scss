@@ -1,0 +1,12 @@
+& {
+    .services {
+        &-item {
+            text-align: center;
+            flex-direction: column;
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}

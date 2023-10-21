@@ -1,0 +1,53 @@
+// функція для пропорційного зменшення - use -> vw(30px)
+
+$vw-viewport: 1920;
+
+@function vw($font) {
+  $vw-context: calc($vw-viewport * 0.01 * 1px);
+  @return calc($font / $vw-context * 1vw);
+  @return $font;
+} 
+
+$color_1: #444444;
+$color_2: #d9232d;
+$color_3: #e24d55;
+$color_4: #fff;
+$color_5: #556270;
+$color_6: rgba(255, 255, 255, 0.5);
+$color_7: rgba(255, 255, 255, 0.8);
+$color_8: #aaaaaa;
+$color_9: #6b7b8d;
+$color_10: rgba(255, 255, 255, 0.7);
+$color_11: rgba(255, 255, 255, 0.6);
+$color_12: white;
+$color_13: #777777;
+$color_14: #bababa;
+$color_15: #ccc;
+$color_16: #dee2e6;
+$color_17: #111;
+$color_18: #999;
+$color_19: #f8d1d3;
+$color_20: #8795a4;
+$color_21: #c1c8d0;
+$color_22: #a4afba;
+$color_23: #606f7e;
+$color_24: #6c757d;
+$color_25: rgba(85, 98, 112, 0.5);
+$color_26: #b7b7b7;
+$color_27: #96a2af;
+$color_28: #fbfbfc;
+$font-family_1: "Open Sans", sans-serif;
+$font-family_2: "Raleway", sans-serif;
+$font-family_3: "Poppins", sans-serif;
+$background-color_1: #fff;
+$background-color_2: rgba(63, 73, 83, 0.8);
+$background-color_3: rgba(30, 35, 40, 0.6);
+$background-color_4: #f8f9fa;
+$background-color_5: #d9232d;
+$background-color_6: #6b7b8d;
+$background-color_7: #fafafa;
+$background-color_8: #556270;
+$background-color_9: #606f7e;
+$border-color_1: #d9232d;
+$border-color_2: #e9797f;
+$border-top-color_1: #eee;
