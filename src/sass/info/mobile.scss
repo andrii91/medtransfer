@@ -9,4 +9,22 @@
             }
         }
     }
+
+    .footer-info, .social-links  {
+        margin-bottom: 20px;
+    }
+
+    .about .content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .blog .entry .entry-img img {
+        max-height: 250px;
+    }
+
+    .blog .entry .entry-content blockquote {
+        padding-left: 16px;
+        padding-right: 0;
+    }
 }

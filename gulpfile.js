@@ -79,6 +79,10 @@ gulp.task('fonts', async function(){
         .pipe(gulp.dest('dist/fonts'))
 });
 
+gulp.task('news', async function(){
+    return gulp.src('src/news/*.html')
+        .pipe(gulp.dest('dist/news'))
+});
 
 gulp.task('pages', async function(){
     return gulp.src('src/*.html')
@@ -98,6 +102,7 @@ gulp.task('uncss', async function () {
 gulp.task('default', async function() {
     //gulp.start('pages', 'js', 'js_v', 'sass', 'images', 'images_css', 'webserver');
     gulp.watch('src/*.html', gulp.parallel('pages') );
+    gulp.watch('src/news/*.html', gulp.parallel('news') );
     gulp.watch('src/js/*.js', gulp.parallel('js') );
     gulp.watch('src/js/vendor/*.js', gulp.parallel('js_v') );
     gulp.watch('src/sass/**/*.scss', gulp.parallel('sass') );
